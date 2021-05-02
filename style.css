@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+/* header */
+header {
+    width: 100%;
+    position: static;
+    padding: 15px;
+}
+.banner {
+    height: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner img {
+    max-height: 80%;
+    margin: 5px;
+}
+.banner .text {
+    margin-right: 60px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 180%;
+}
+nav a {
+    width: 100%;
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #ddd;
+}
+nav a.active {
+    background: #ccc;
+}
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 15px;
+}
+main h1 {
+    font-size: 30px;
+    margin: 5px;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+main a {
+    color: inherit;
+    font-weight: bold;
+    
+}
+main img {
+    width: 95%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+main article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 80%;
+}
+main p {
+    margin: 10px;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 15px;
+
+    background-color: #222;
+    color: #bbb;
+    line-height: 180%;
+    padding-top: 20px;
+    text-transform: none;
+    font-size: 13px;
+}
+footer a.mail{
+    color: inherit;
+}
+#top {
+    color: rgb(153, 113, 113);
+    font-style: italic;
+    text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+    nav {flex-direction: row; line-height: 200%;}
+    main h1 {font-size: 3em;}
+    main h2 {font-size: 1.5em;}
+    main p {font-size: 1.2em;}
+    .banner .text {font-size: 1.5em;}
+    footer {flex-direction: row; justify-content: space-evenly; min-height: 80px; align-items: center;}
+}
+@media only screen and (min-width: 900px) {
+    main h1 {font-size: 5em;}
+    main h2 {font-size: 2em;}
+    .banner .text {font-size: 2em;}
+    nav {line-height: 250%;}
+}
