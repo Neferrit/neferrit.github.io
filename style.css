@@ -61,7 +61,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding: 15px;
+    padding-bottom: 15px;
 }
 main h1 {
     font-size: 30px;
@@ -75,9 +75,10 @@ main a {
     font-weight: bold;
     
 }
-main > img {
+main > article > img {
     width: 95%;
     max-width: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -119,15 +120,15 @@ footer a.mail{
     text-decoration: none;
 }
 .slider {
-    width: 800px;
-    height: 500px;
+    width: 300px;
+    height: 187px;
     border-radius: 10px;
     overflow: hidden;
   }
   
 .slides {
     width: 500%;
-    height: 500px;
+    height: 187px;
     display: flex;
 }
 .slides input {
@@ -138,12 +139,12 @@ footer a.mail{
     transition: 2s;
 }
 .slide img {
-    width: 800px;
-    height: 500px;
+    max-width: 300px;
+    max-height: 187px;
 }
 .navigation-manual {
     position: absolute;
-    width: 800px;
+    width: 300px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -179,9 +180,9 @@ footer a.mail{
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 300px;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 147px;
 }
 .navigation-auto div {
     border: 2px solid #40D3DC;
@@ -207,6 +208,7 @@ footer a.mail{
 #radio5:checked ~ .navigation-auto .auto-btn5 {
     background: #40D3DC;
 }
+
 @media only screen and (min-width: 600px) {
     nav {flex-direction: row; line-height: 200%;}
     main h1 {font-size: 3em;}
@@ -214,10 +216,20 @@ footer a.mail{
     main p {font-size: 1.2em;}
     .banner .text {font-size: 1.5em;}
     footer {flex-direction: row; justify-content: space-evenly; min-height: 80px; align-items: center;}
+    .slider {width: 500px; height: 312px;}
+    .slides {height: 312px;}
+    .navigation-manual {width: 500px;}
+    .navigation-auto {width: 500px; margin-top: 272px;}
+    .slide img {max-width: 500px; max-height: 312px;}
 }
 @media only screen and (min-width: 900px) {
     main h1 {font-size: 5em;}
     main h2 {font-size: 2em;}
     .banner .text {font-size: 2em;}
     nav {line-height: 250%;}
+    .slider {width: 800px; height: 500px;}
+    .slides {height: 500px;}
+    .navigation-manual {width: 800px;}
+    .navigation-auto {width: 800px; margin-top: 460px;}
+    .slide img {max-width: 800px; max-height: 500px;}
 }

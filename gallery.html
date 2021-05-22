@@ -83,14 +83,7 @@
   <script type="text/javascript">
     var counter = 1;
     const slider = document.querySelector(".slider");
-    let radio_buttons = document.getElementsByName("radio-btn");
     var playSlider;
-
-    function rbHandler() {
-      clearInterval(playSlider);
-      repeater();
-    }
-
 
     var repeater = () => {
       playSlider = setInterval(function () {
