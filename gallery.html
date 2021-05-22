@@ -91,15 +91,6 @@
       repeater();
     }
 
-    for (let button of radio_buttons) {
-      button.addEventListener("click", () => {
-        let index = button;
-        counter = index + 1;
-        clearInterval(playSlider);
-        delay(5000);
-        repeater();
-      });
-    }
 
     var repeater = () => {
       playSlider = setInterval(function () {
